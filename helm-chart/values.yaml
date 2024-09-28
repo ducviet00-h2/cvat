@@ -24,6 +24,7 @@ cvat:
     initializer:
       labels: {}
       annotations: {}
+      ttlSecondsAfterFinished: 60
       resources: {}
       affinity: {}
       tolerations: []

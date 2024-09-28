@@ -113,9 +113,6 @@ spec:
             name: cvat-backend-data
             subPath: models
           {{- end }}
-          {{- with concat .Values.cvat.backend.additionalVolumeMounts $localValues.additionalVolumeMounts }}
-          {{- toYaml . | nindent 10 }}
-          {{- end }}
         {{- end }}
       {{- with merge $localValues.affinity .Values.cvat.backend.affinity }}
       affinity:
